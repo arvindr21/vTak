@@ -1,0 +1,15 @@
+<div class="header" ng-controller="Toolbar">
+    <div class="btn-group pull-right">
+        <a href="#" class="btn btn-xs btn-default" ng-show="user" ng-click="logoutUser()">Logout</a>
+        <button ng-click="minimize()" type="button" class="btn btn-default btn-xs">
+            <span class="glyphicon glyphicon-minus"></span>
+        </button>
+        <button ng-click="toggleFullscreen()" type="button" class="btn btn-default btn-xs">
+            <span class="glyphicon glyphicon-fullscreen"></span>
+        </button>
+        <button ng-click="close()" type="button" class="btn btn-default btn-xs">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+    </div>
+    <h1>vTak</h1>
+</div>

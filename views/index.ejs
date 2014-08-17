@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="ng-auth">
+<head>
+<title>vTak</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-route.min.js"></script>
+  <script src="lib/angular-resource.min.js"></script>
+  <script type="text/javascript" src="lib/firebase.js"></script>
+  <script type="text/javascript" src="lib/firebase-simple-login.js"></script>
+  <script type="text/javascript" src="lib/angularfire.min.js"></script>
+  <script type="text/javascript" src="lib/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+  <script type="text/javascript" src="lib/scrollglue.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/factory.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/directives.js"></script>
+</head>
+</head>
+<body>
+
+<div class="container" ng-controller="AppCtrl">
+   <div ng-include src="'partials/head.html'"></div>
+   <hr/>
+   <ng-view></ng-view>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+    "name": "vTak",
+    "version": "0.0.1",
+    "private": true,
+    "main": "index.html",
+    "dependencies": {
+        "express": "~3.4.8",
+        "cookie-parser": "~1.0.1",
+        "body-parser": "~1.0.0",
+        "ejs": "~0.8.5",
+        "debug": "~0.7.4"
+    },
+    "devDependencies": {
+        "gulp": "^3.8.7",
+        "gulp-shell": "^0.2.9",
+        "node-webkit-builder": "^0.1.1"
+    },
+    "window": {
+        "title": "vTak",
+        "toolbar": true,
+        "frame": true,
+        "position": "center",
+        "fullscreen": false,
+        "resizable": false,
+        "width": 1000,
+        "height": 600,
+        "min_width": 600,
+        "min_height": 400
+    },
+    "node-remote": "<local>"
+}

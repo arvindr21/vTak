@@ -1,0 +1,67 @@
+body {
+    overflow-x: hidden;
+}
+.room-head {
+    margin-top: -35px;
+    padding: 20px;
+    border-bottom: 2px solid #CCCCCC;
+    padding-bottom: 8px;
+}
+.prof-img {
+    vertical-align: bottom;
+}
+.welcome-panel {
+    padding-right: 20px;
+}
+.cust-text {
+    width: 22%;
+    display: initial;
+    vertical-align: middle;
+    margin-left: 11px;
+}
+.rooms, .messages {
+    margin: 20px;
+    border: 1px solid #e8e7e8;
+}
+.room {
+    padding: 10px;
+    border: 1px solid #c7c7c7;
+    margin-bottom: -1px;
+    background: #fff;
+    -webkit-transition: background 0.5s;
+}
+.room:hover {
+    background: #e6e6e6;
+}
+.join-room {
+    margin-left: 5px;
+}
+.messages {
+    height: 377px;
+    overflow: auto;
+    border: 1px solid #e8e7e8;
+}
+.message {
+    border-bottom: 1px solid #c7c7c7;
+    padding: 3px;
+    padding-left: 10px;
+    background: #fff;
+    height: 75px;
+    -webkit-transition: background 0.5s;
+}
+.message img {
+    vertical-align: baseline;
+    margin-right: 9px;
+}
+.chat-input {
+    position: absolute;
+    bottom: 0px;
+    width: 93%;
+    text-align: center;
+    margin-bottom: 14px;
+    padding-left: 8px;
+}
+.back-btn {
+    vertical-align: bottom;
+    margin-left: 20px;
+}

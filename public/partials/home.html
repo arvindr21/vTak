@@ -1,0 +1,27 @@
+<div class="container" ng-controller="HomeCtrl">
+    <label class="pull-right welcome-panel" ng-show="user">
+        Welcome, <u>
+        <span id="email">{{user.name}}</span></u>
+        <img class="prof-img" ng-src="{{user.img}}" width="39" />
+    </label>
+    <br/>
+    <h3 class="room-head">Chat Rooms
+        <a href="javascript:" class="btn btn-xs btn-primary" ng-hide="isNew == true" ng-click="isNew = true; roomName = ''; ">New Room</a>
+        <input ng-show="isNew == true" class="input-sm form-control cust-text" type="text" ng-model="roomName" placeholder="Room Name" />
+        <a href="javascript:" ng-disabled="!roomName" ng-show="isNew == true" class="btn btn-xs btn-info" ng-click="newRoom()">Create</a>
+    </h3>
+
+    <input type="text" class="form-control" placeholder="Search Rooms" ng-model="search">
+    <div class="rooms">
+        <div ng-repeat="item in rooms | filter:search" class="room">
+            <h3>{{item.roomname}}</h3>By : {{item.createdby}}
+            <a class="btn btn-primary btn-xs pull-right join-room" href="javascript:" ng-click="joinChat($index)">Join</a>
+            <a class="btn btn-danger btn-xs pull-right" ng-show="user.name == item.createdby" ng-click="deleteRoom($index)">Delete</a>
+
+        </div>
+        <div class="room" ng-show="rooms.length == 0">
+            <h3>No Rooms Available. Create your own!</h3>
+        </div>
+    </div>
+
+</div>

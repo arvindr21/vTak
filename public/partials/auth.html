@@ -1,0 +1,97 @@
+<!-- login panel -->
+<!-- http://bootsnipp.com/snippets/featured/login-amp-password-reminder -->
+<div ng-controller="AuthCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div style="padding: 20px;" class="form-auth">
+                    <h4 style="border-bottom: 1px solid #c5c5c5;">
+                        <i class="glyphicon glyphicon-user">
+                        </i>
+                        Sign In
+                    </h4>
+                    <form role="form">
+                        <fieldset>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon">
+                                    @
+                                </span>
+                                <input class="form-control" placeholder="Email" name="email" type="email" ng-model='user.email' id="signin_email" autofocus>
+                            </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-certificate">
+                              </i>
+                                </span>
+                                <input class="form-control" placeholder="Password" name="password" type="password" id="signin_pwd" ng-model='user.password'>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary btn-block" ng-click="signin()">
+                                    Sign In
+                                </button>
+                                <p class="help-block">
+                                    <a toggle-visible class="pull-right text-muted" href="javascript:" id="signup">Sign Up</a>
+                                </p>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div style="display: none;" class="form-auth">
+                    <form role="form">
+                        <h4 style="border-bottom: 1px solid #c5c5c5;">
+                            <i class="glyphicon glyphicon-user">
+                           </i>
+                            Sign Up
+                        </h4>
+                        <fieldset>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon">
+                                    @
+                                </span>
+                                <input id="signup_email" class="form-control" placeholder="Email" type="email" autofocus ng-model='user.email'>
+                            </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-certificate">
+                              </i>
+                                </span>
+                                <input id="signup_pwd" class="form-control" placeholder="Password" name="password" type="password" ng-model='user.password'>
+                            </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-certificate">
+                              </i>
+                                </span>
+                                <input id="signup_rpwd" class="form-control" placeholder="Re-enter Password" name="password" type="password" ng-model='user.rpassword'>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary btn-block" ng-click="signup()">
+                                    Sign Up
+                                </button>
+                                <p class="help-block">
+                                    <a class="text-muted" href="javascript:" id="signup" toggle-visible>Sign In</a>
+                                </p>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login panel -->
+    <hr/>
+    <h3 class="text-center">Or Login with</h3>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-4">
+                <a href="#" class="btn btn-lg btn-primary btn-block" ng-click="login('facebook');">Facebook</a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="btn btn-lg btn-info btn-block" ng-click="login('twitter');">Twitter</a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="btn btn-lg btn-danger btn-block" ng-click="login('google');">Google</a>
+            </div>
+        </div>
+    </div>
+</div>

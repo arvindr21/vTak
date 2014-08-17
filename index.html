@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page</title>
+    <!-- http://codepen.io/fivera/pen/epbla -->
+    <style type="text/css">
+    /* BODY */
+    @import url(http://fonts.googleapis.com/css?family=Titan+One);
+    /* BODY */
+    body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(31, 69, 85);
+        background-image: -webkit-linear-gradient(90deg, rgb(47, 108, 134) 0%, rgb(89, 180, 255) 100%);
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        overflow: hidden;
+    }
+    ::selection {
+        background: transparent;
+    }
+    /* CLOUDS */
+    body:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        margin: auto;
+        border-radius: 100%;
+        background: transparent;
+        display: block;
+        box-shadow: 0 0 150px 100px rgba(255, 255, 255, .6), 200px 0 200px 150px rgba(255, 255, 255, .6), -250px 0 300px 150px rgba(255, 255, 255, .6), 550px 0 300px 200px rgba(255, 255, 255, .6), -550px 0 300px 200px rgba(255, 255, 255, .6);
+    }
+    /* JUMP */
+    h1 {
+        cursor: default;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100px;
+        margin: auto;
+        display: block;
+        -webkit-animation: bounce .3s ease infinite alternate;
+        font-family: 'Titan One', cursive;
+        font-size: 80px;
+        color: #222;
+        text-align: center;
+        line-height: 100px;
+        text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, .6);
+        margin-top: 45px;
+    }
+    /* ANIMATION */
+    @-webkit-keyframes bounce {
+        100% {
+            top: -25px;
+            text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 #CCC, 0 7px 0 #CCC, 0 8px 0 #CCC, 0 9px 0 #CCC, 0 30px 30px rgba(0, 0, 0, .3);
+        }
+    }
+    h2 {
+        position: relative;
+        top: 300px;
+        font-family: 'Titan One', cursive;
+        text-align: center;
+        font-size: 36px;
+    }
+    </style>
+    <script type="text/javascript">
+    function init() {
+        require('./app.js');
+        setTimeout(function() {
+             window.location.assign('http://localhost:3000/');
+        }, 2999);
+    }
+    </script>
+</head>
+
+<body onload="init()">
+    <h1>vTak</h1>
+    <h2>The Gossip begins here!</h2>
+</body>
+
+</html>
