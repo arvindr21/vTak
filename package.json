@@ -17,8 +17,8 @@
     },
     "window": {
         "title": "vTak",
-        "toolbar": true,
-        "frame": true,
+        "toolbar": false,
+        "frame": false,
         "position": "center",
         "fullscreen": false,
         "resizable": false,
